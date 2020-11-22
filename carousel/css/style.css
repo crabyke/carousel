@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */
+
+body {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: absolute;
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img {
+  width: 960px;
+  height: 540px;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: opacity 1s ease-in-out;
+}
+
+.container .left {
+  position: relative;
+  left: 4rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container .right {
+  position: relative;
+  right: 4rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container button:hover {
+  color: white;
+  transition: all 0.2s ease-in-out;
+  
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
